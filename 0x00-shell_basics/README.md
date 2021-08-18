@@ -74,3 +74,9 @@
 ### 100-lets_move
 
 `mv [[::]] <Destination>` - Moves files with specific characteristics.  
+
+
+### 101-clean_emacs
+
+
+`rm *` - Uses wildcard to delete specific files.
