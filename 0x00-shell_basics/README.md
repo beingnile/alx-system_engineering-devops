@@ -52,3 +52,7 @@
 `cd -` - Changes the working directory to the previous one.
 
 > *For bash commands involving changing directories (cd), add Source (.) infront of the executable*.
+
+### 10-back
+
+`ls -la . .. /boot` - Lists all files in the current directory and the parent of the working directory and the `/boot` directory (in this order), in long format.
