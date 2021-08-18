@@ -22,3 +22,10 @@
 
 `ls -la` - Display current directory contents in a long format, including hidden files.
 
+### 5-listfilesdigitonly
+
+`ls -lna` - Display current directory contents:
+
+* In long format
+* With user and group IDs displayed numerically
+* And hidden files
