@@ -53,6 +53,6 @@
 
 > *For bash commands involving changing directories (cd), add Source (.) infront of the executable*.
 
-### 10-back
+### 11-lists
 
 `ls -la . .. /boot` - Lists all files in the current directory and the parent of the working directory and the `/boot` directory (in this order), in long format.
