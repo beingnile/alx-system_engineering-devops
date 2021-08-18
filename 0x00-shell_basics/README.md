@@ -18,3 +18,7 @@
 
 `ls -l` - Display current directory contents in a long format.
 
+### 4-listmorefiles
+
+`ls -la` - Display current directory contents in a long format, including hidden files.
+
