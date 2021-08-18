@@ -47,3 +47,8 @@
 
 `rmdir` - Deletes directories.
 
+### 10-back
+
+`cd ..` - Changes the working directory to the previous one.
+
+> *For bash commands involving changing directories (cd), add Source (.) infront of the executable*.
