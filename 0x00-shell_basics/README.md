@@ -56,3 +56,10 @@
 ### 11-lists
 
 `ls -la . .. /boot` - Lists all files in the current directory and the parent of the working directory and the `/boot` directory (in this order), in long format.
+
+### 12-file_type
+
+`type` - Reads a file and gives out it's type.
+
+
+
