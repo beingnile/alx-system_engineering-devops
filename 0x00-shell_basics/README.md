@@ -78,5 +78,11 @@
 
 ### 101-clean_emacs
 
-
 `rm *` - Uses wildcard to delete specific files.
+
+
+### 102-tree
+
+`mkdir -p, --parents <Argument>` - Makes parent directories.
+
+ 
