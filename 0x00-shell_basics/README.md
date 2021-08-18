@@ -86,3 +86,7 @@
 `mkdir -p, --parents <Argument>` - Makes parent directories.
 
  
+### 103-commas
+
+`ls -pamv` - outputs a list divided by commas.
+
