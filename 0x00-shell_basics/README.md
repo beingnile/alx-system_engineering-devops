@@ -29,3 +29,7 @@
 * In long format
 * With user and group IDs displayed numerically
 * And hidden files
+
+### 6-firstdirectory
+
+`mkdir` - creates a directory named `my_first_directory` in the `/tmp/` directory.
