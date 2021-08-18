@@ -43,3 +43,7 @@
 `rm` - Deletes files and directories with right arguments.
 
 
+### 9-firstdirdeletion
+
+`rmdir` - Deletes directories.
+
