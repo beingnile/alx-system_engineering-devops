@@ -66,3 +66,8 @@
 
 `ln -s <path to the file/folder to be linked> <the path of the link to be created` - Creates a shortcut for a specific file..
 
+### 14-copy_html
+
+`cp -nu` - Copies files not present in the target directory.
+
+
