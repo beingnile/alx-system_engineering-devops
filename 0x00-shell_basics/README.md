@@ -71,3 +71,6 @@
 `cp -nu` - Copies files not present in the target directory.
 
 
+### 100-lets_move
+
+`mv [[::]] <Destination>` - Moves files with specific characteristics.  
