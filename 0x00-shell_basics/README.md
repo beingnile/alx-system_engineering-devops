@@ -34,6 +34,12 @@
 
 `mkdir` - creates a directory named `my_first_directory` in the `/tmp/` directory.
 
-## 7-movethatfile
+### 7-movethatfile
 
 `mv` - Moves files from a specific directory to another.
+
+### 8-firstdelete
+
+`rm` - Deletes files and directories with right arguments.
+
+
