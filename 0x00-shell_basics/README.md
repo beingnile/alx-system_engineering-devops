@@ -62,4 +62,7 @@
 `type` - Reads a file and gives out it's type.
 
 
+### 13-symbolic_link
+
+`ln -s <path to the file/folder to be linked> <the path of the link to be created` - Creates a shortcut for a specific file..
 
