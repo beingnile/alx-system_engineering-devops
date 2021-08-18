@@ -33,3 +33,7 @@
 ### 6-firstdirectory
 
 `mkdir` - creates a directory named `my_first_directory` in the `/tmp/` directory.
+
+## 7-movethatfile
+
+`mv` - Moves files from a specific directory to another.
