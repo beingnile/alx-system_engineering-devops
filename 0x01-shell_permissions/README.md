@@ -1,3 +1,23 @@
 # Shell Permissions
 
-This is a short project demonstrating shell permissions 
+This is a short project demonstrating shell permissions
+
+## Some of the commands used in the scripts
+
+### 0-iam_betty
+
+`su` - Changes the user.
+
+### 1-who_am_i
+
+`whoami` - Prints out the username.
+
+### 2-groups
+
+`groups` - Prints all the groups of the current user.
+
+### 3-new_owne
+
+`chown` - Changes the owner of a file.
+
+### 
