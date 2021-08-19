@@ -57,3 +57,8 @@ With th right arguments, you can specify the types of permission.
 ### 12-directory_permissions
 
 > Uses the same command as 5-execute.
+
+### 13-change_group
+
+`chgrp` - Changes the group of a file.
+
