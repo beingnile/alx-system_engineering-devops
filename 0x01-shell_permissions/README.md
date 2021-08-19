@@ -66,3 +66,6 @@ With th right arguments, you can specify the types of permission.
 
 `chown` - Changes the owner of a file.
 
+### 101-symbolic_link_permissions
+
+`chown` - Changes the owner of a file.
