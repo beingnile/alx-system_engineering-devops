@@ -16,7 +16,7 @@ This is a short project demonstrating shell permissions
 
 `groups` - Prints all the groups of the current user.
 
-### 3-new_owne
+### 3-new_owner
 
 `chown` - Changes the owner of a file.
 
