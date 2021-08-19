@@ -31,6 +31,7 @@ This is a short project demonstrating shell permissions
 ### 6-multiple_permissions
 
 > Uses the same command as 5-execute.
+The script gives multiple permissions to files.
 
 ### 7-everybody
 
@@ -39,6 +40,7 @@ This is a short project demonstrating shell permissions
 ### 8-James_Bond
 
 > Uses the same command as 5-execute.
+With th right arguments, you can specify the types of permission.
 
 ### 9-John_Doe
 
@@ -52,3 +54,6 @@ This is a short project demonstrating shell permissions
 
 > Uses the same command as 5-execute.
 
+### 12-directory_permissions
+
+> Uses the same command as 5-execute.
