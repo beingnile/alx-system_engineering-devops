@@ -28,3 +28,8 @@ This is a short project demonstrating shell permissions
 
 `chmod` - Gives permissions to files.
  
+### 6-multiple_permissions
+
+> Uses the same command as 5-execute
+
+
