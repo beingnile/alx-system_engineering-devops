@@ -22,7 +22,7 @@ This is a short project demonstrating shell permissions
 
 ### 4-empty
 
-'touch' - Creates an empty file.
+`touch` - Creates an empty file.
 
 ### 5-execute
 
@@ -30,6 +30,9 @@ This is a short project demonstrating shell permissions
  
 ### 6-multiple_permissions
 
-> Uses the same command as 5-execute
+> Uses the same command as 5-execute.
 
+### 7-everybody
+
+> Uses the same command as 5-execute.
 
