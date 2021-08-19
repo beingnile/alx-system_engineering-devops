@@ -20,4 +20,8 @@ This is a short project demonstrating shell permissions
 
 `chown` - Changes the owner of a file.
 
+### 4-empty
+
+'touch' - Creates an empty file
+
 ### 
