@@ -22,6 +22,9 @@ This is a short project demonstrating shell permissions
 
 ### 4-empty
 
-'touch' - Creates an empty file
+'touch' - Creates an empty file.
 
-### 
+### 5-execute
+
+`chmod` - Gives permissions to files.
+ 
