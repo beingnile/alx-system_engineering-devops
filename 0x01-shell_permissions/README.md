@@ -62,3 +62,7 @@ With th right arguments, you can specify the types of permission.
 
 `chgrp` - Changes the group of a file.
 
+### 100-change_owner_and_group
+
+`chown` - Changes the owner of a file.
+
