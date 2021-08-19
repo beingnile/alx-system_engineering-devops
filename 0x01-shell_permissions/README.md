@@ -44,4 +44,8 @@ This is a short project demonstrating shell permissions
 
 > Uses the same command as 5-execute.
 
+### 10-mirror_permissions
+
+> Uses the same command as 5-execute.
+
 
