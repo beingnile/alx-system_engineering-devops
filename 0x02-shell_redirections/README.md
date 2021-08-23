@@ -20,3 +20,6 @@ For this project, we'll be exploring bash input and output
 
 `rev` - Used to reverse the lines character-wise.
 
+`cut` - Used to cut out sections from each line of files and write the results to standard output.
+
+
