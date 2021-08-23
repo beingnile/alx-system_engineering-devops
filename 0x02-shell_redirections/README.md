@@ -12,4 +12,5 @@ For this project, we'll be exploring bash input and output
 
 `head` - Prints the first 10 lines of a file.
 
+`find` - It searches for files and directories in a directory hierarchy based on a user given expression and can perform user-specified action on each matched file.
 
