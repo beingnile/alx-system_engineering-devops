@@ -14,3 +14,5 @@ For this project, we'll be exploring bash input and output
 
 `find` - It searches for files and directories in a directory hierarchy based on a user given expression and can perform user-specified action on each matched file.
 
+`grep` - For searching plain-text data sets for lines that match a regular expression.
+
