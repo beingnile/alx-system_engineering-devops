@@ -18,3 +18,5 @@ For this project, we'll be exploring bash input and output
 
 `tr` - Translating or deleting characters.
 
+`rev` - Used to reverse the lines character-wise.
+
