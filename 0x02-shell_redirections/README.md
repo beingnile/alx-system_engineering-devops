@@ -8,5 +8,8 @@ For this project, we'll be exploring bash input and output
 
 `cat` - Allows us to create single or multiple files, view content of a file, concatenate files and redirect output in terminal or files.
 
-`tail` - Prints the last 10 contents of a file.
+`tail` - Prints the last 10 lines of a file.
+
+`head` - Prints the first 10 lines of a file.
+
 
