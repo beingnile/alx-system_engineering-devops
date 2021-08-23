@@ -16,3 +16,5 @@ For this project, we'll be exploring bash input and output
 
 `grep` - For searching plain-text data sets for lines that match a regular expression.
 
+`tr` - Translating or deleting characters.
+
