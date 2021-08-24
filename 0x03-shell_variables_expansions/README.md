@@ -12,3 +12,4 @@ This project will cover shell scripts containing variables, init files, expansio
 
 `printenv` - Prints out the names and values of the variables in the environment, with one name/value pair per line.
 
+`set` - Without any arguments, it lists all local variables and environment variables, and functions.
