@@ -20,5 +20,6 @@ This project will cover shell scripts containing variables, init files, expansio
 
 `printf` - Formats and prints data.
 
+`cat` - Prints out file content.
 
-
+`cut` - Extracts sections from each line of input.
