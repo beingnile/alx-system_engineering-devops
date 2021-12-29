@@ -9,4 +9,5 @@ This is a short introduction to shell basics by using projects inclined to that.
 * Scripts containing shell commands
 * Shell permissions 
 * Shell I/O redirections
-* Shell variable expansions 
+* Shell variable expansions
+* Command line challenge
