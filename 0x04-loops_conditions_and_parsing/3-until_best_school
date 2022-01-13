@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Implement the until loop to print text
+i=1
+until ((i==11))
+do
+	echo 'Best School'
+	((i++))
+done
