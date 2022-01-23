@@ -12,3 +12,4 @@ This is a short introduction to shell basics by using projects inclined to that.
 * Shell variable expansions
 * Command line challenge
 * Bash conditions,loops and parsing
+* Networking basics
