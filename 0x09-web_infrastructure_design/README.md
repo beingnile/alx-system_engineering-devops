@@ -5,5 +5,5 @@ In this project, I am required to design web infrastructures on whiteboards and 
 The topics learnt and covered include:
 * Tcp/ip
 * The OSI model
-* How ghe interney works
+* How the internet wotks
 * DNS
