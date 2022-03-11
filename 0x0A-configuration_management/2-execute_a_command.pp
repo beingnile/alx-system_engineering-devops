@@ -1,3 +1,3 @@
 # Execute a command
-exec {'pkill -f killmenow':
+exec {'/usr/bin/pkill killmenow':
 }
