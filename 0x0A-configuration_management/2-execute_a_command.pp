@@ -1,4 +1,3 @@
 # Execute a command
-exec {'pkill':
-  command  => 'pkill killmenow',
+exec {'pkill -f killmenow':
 }
