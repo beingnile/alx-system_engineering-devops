@@ -62,4 +62,5 @@ done
 ```
 
 > To see how the third file works, run `./killmenow` in a different terminal.
-> Apply the puppet manifest in a new terminal. The `killmenow` file should have executable rights.
+> Apply the puppet manifest in a new terminal. The `killmenow` process should terminate.
+> Note that the `killmenow` file should have executable rights.
