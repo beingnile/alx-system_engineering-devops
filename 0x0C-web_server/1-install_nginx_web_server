@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Install nginx
+sudo apt-get update && sudo apt-get install nginx -y
+
+sudo mkdir -p /etc/nginx/html
+
+sudo echo "Hello World!" > /etc/nginx/html/index.html
+
+sudo printf %s "server {
+     listen      80 default_server;
+     listen      [::]:80 default_server;
+     root        /etc/nginx/html;
+     index       index.html index.htm;
+}
+" > /etc/nginx/sites-available/default
+
+sudo systemctl restart nginx
