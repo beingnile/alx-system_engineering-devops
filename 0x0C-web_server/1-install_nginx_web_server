@@ -14,4 +14,4 @@ sudo printf %s "server {
 }
 " > /etc/nginx/sites-available/default
 
-sudo systemctl restart nginx
+service nginx restart
