@@ -9,7 +9,7 @@ package { 'nginx':
 }
 
 exec { 'chown':
-  command => 'chown -R "$USER":"$USER" /var/www/html'
+  command => 'chown -R "$USER":"$USER" /var/www/html',
   path    => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
 }
 
