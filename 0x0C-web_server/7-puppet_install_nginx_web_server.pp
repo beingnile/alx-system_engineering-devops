@@ -1,13 +1,21 @@
 # Install nginx using puppet
-exec { 'usr/bin/apt-get update':
+exec { 'update':
+  command => 'apt-get update',
+  path    => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
 }
 
 package { 'nginx':
   ensure  => 'installed',
 }
 
-exec { 'usr/bin/chown':
-  command => 'usr/bin/chown -R "$USER":"$USER" /var/www/html'
+exec { 'chown':
+  command => 'chown -R "$USER":"$USER" /var/www/html'
+  path    => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+}
+
+exec { 'chown':
+  command => 'chown -R "$USER":"$USER" /etc/nginx/sites-enabled'
+  path    => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
 }
 
 file { '/var/www/html/index.html':
@@ -43,5 +51,5 @@ file { 'config':
 }
 
 exec { 'service nginx restart':
-  command => '/usr/sbin/service nginx restart',
+  path => '/usr/bin:/usr/sbin:/bin',
 }
