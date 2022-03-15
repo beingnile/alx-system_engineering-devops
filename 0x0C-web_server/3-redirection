@@ -3,10 +3,10 @@
 
 sudo apt-get update && sudo apt-get install nginx -y
 
-sudo chown -R $USER:$USER /var/www/html/index.nginx-debian.html
-sudo chown -R $USER:$USER /etc/nginx/sites-available/default
+sudo chown -R "$USER":"$USER" /var/www/html/index.nginx-debian.html
+sudo chown -R "$USER":"$USER" /etc/nginx/sites-available/default
 
-sudo echo "Hello World!" > /var/www/html/index.nginx-debian.html
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
 
 redirection=\
 "server {
@@ -20,6 +20,6 @@ redirection=\
 	}
 }"
 
-sudo echo -e '$redirection' > /etc/nginx/sites-available/default
+echo -e "$redirection" > /etc/nginx/sites-available/default
 
 sudo service nginx restart
