@@ -13,8 +13,8 @@ exec { 'chown':
   path    => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
 }
 
-exec { 'chown':
-  command => 'chown -R "$USER":"$USER" /etc/nginx/sites-enabled'
+exec { 'change owner':
+  command => 'chown -R "$USER":"$USER" /etc/nginx/sites-enabled',
   path    => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
 }
 
