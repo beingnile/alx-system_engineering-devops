@@ -10,7 +10,7 @@ exec { 'change owner':
 }
 
 exec { 'Add line'
-  command  => 'sudo sed -i "/try_files \$uri \$uri/ =404;/a \t\tadd_header X-Served-By $HOSTNAME;" /etc/nginx/sites-available/default',
+  command  => 'sudo sed -i "/try_files \$uri \$uri/ =404;/a add_header X-Served-By $HOSTNAME;" /etc/nginx/sites-available/default',
   path => '/usr/bin:/usr/sbin:/bin',
 }
 
