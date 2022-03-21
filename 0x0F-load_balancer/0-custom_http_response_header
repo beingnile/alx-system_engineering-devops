@@ -18,7 +18,7 @@ config=\
         index index.html index.htm index.nginx-debian.html;
         server_name _;
         location / {
-		add_header X-Served-By \$whoami
+		add_header X-Served-By \$hostname;
                 try_files \$uri \$uri/ =404;
         }
         error_page 404 /404.html;
