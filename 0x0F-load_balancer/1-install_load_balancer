@@ -5,6 +5,9 @@ sudo add-apt-repository ppa:vbernat/haproxy-2.4 -y
 sudo apt install haproxy=2.4.\* -y
 sudo apt update && sudo apt upgrade -y
 
+sudo chown -R "$USER":"$USER" /etc/default/haproxy
+sudo chown -R "$USER":"$USER" /etc/haproxy/haproxy.cfg
+
 echo "ENABLED=1" >> /etc/default/haproxy
 
 config=\
