@@ -4,3 +4,22 @@ sudo apt install --no-install-recommends software-properties-common -y
 sudo add-apt-repository ppa:vbernat/haproxy-2.4 -y
 sudo apt install haproxy=2.4.\* -y
 sudo apt update && sudo apt upgrade -y
+
+echo "ENABLED=1" >> /etc/default/haproxy
+
+config=\
+"
+backend myservers
+	balance roundrobin
+	server 1323-web-01 34.139.139.90:80 check
+	server 1323-web-02 3.236.207.201:80 check
+
+frontend myfrontend
+	bind :80
+	mode http
+	default_backend myservers
+"
+
+echo "$config" >> /etc/haproxy/haproxy.cfg
+
+service haproxy restart
