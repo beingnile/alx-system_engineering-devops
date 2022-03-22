@@ -22,4 +22,4 @@ frontend myfrontend
 
 echo "$config" >> /etc/haproxy/haproxy.cfg
 
-service haproxy restart
+sudo service haproxy restart
