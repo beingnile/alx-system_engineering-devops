@@ -10,11 +10,13 @@ package { 'nginx':
 
 exec { 'chown':
   command  => 'chown -R "$USER":"$USER" /etc/nginx/sites-available/default',
+  path     => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
   provider => shell,
 }
 
 exec { 'custom header':
   command  => 'sudo sed -i "/listen 80 default_server;/a add_header X-Served-By $HOSTNAME;" /etc/nginx/sites-available/default',
+  path     => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
   provider => shell,
 }
 
