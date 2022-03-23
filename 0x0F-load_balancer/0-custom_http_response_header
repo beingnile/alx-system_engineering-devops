@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Configures my nginx server and add a custom header
+# Configures my nginx server and adds a custom header
 
 sudo apt-get update && sudo apt-get install nginx -y
 
