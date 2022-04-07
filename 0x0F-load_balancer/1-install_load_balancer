@@ -33,8 +33,8 @@ defaults
 
 backend myservers
 	balance roundrobin
-	server 1323-web-01 34.139.139.90:80 check
-	server 1323-web-02 3.236.207.201:80 check
+	server 1323-web-01 35.185.89.234:80 check
+	server 1323-web-02 35.196.107.53:80 check
 
 frontend myfrontend
 	bind :80
