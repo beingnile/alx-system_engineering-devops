@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 # Display information about subdomains.
 
+domain=$1.$2
+dig $domain | awk '($0 == dom) {print $3}' dom=$domain
