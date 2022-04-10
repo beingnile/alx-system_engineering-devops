@@ -10,7 +10,12 @@ function digdomain {
 
 if [ $# -eq 1 ]
 then
-	echo "Print all domains"
+	declare -a all_subdoms=( "www" "lb-01" "web-01" "web-02" )
+	dom=$1
+	for i in ${all_subdoms[@]}
+	do
+		digdomain $i $dom
+	done
 else
 	digdomain $2 $1
 fi
