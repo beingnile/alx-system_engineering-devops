@@ -2,10 +2,10 @@
 # Display information about subdomains.
 
 function digdomain {
-	subdom=$1
-	fulldom=$1.$2
+	subdom="$1"
+	fulldom="$1.$2"
 
-	dig $fulldom | grep -A1 'ANSWER SECTION:' | awk '($0 ~ dom) {print "The subdomain " s " is a " $4 " record and points to " $5}' s="$subdom" dom="$fulldom"
+	dig "$fulldom" | grep -A1 'ANSWER SECTION:' | awk '($0 ~ dom) {print "The subdomain " s " is a " $4 " record and points to " $5}' s="$subdom" dom="$fulldom"
 }
 
 if [ $# -eq 1 ]
@@ -14,8 +14,8 @@ then
 	dom=$1
 	for i in "${all_subdoms[@]}"
 	do
-		digdomain $i $dom
+		digdomain "$i" "$dom"
 	done
 else
-	digdomain $2 $1
+	digdomain "$2" "$1"
 fi
