@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Run nginx as user nginx
-chmod -R "$USER":"$USER" /etc/nginx/nginx.conf
+chown -R "$USER":"$USER" /etc/nginx/nginx.conf
 sed -i "li user nginx;" /etc/nginx/nginx.conf
 sed -i 's/80/8080/' /etc/nginx/sites-enabled/default
 sudo -u nginx service nginx restart
