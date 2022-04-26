@@ -21,9 +21,10 @@ def number_of_subscribers(subreddit):
     subscribers = requests.get(url, headers=headers)
 
     data = subscribers.json()
+    subscribers = data["data"]["subscribers"]
 
     try:
-        return data["data"]["subscribers"]
+        return subscribers
     except KeyError:
         if data["message"] == 'Not Found':
             return 0
