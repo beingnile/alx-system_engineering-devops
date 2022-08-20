@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# Print active IPv4 IPs
-ip -4 addr | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | cut -b 6-

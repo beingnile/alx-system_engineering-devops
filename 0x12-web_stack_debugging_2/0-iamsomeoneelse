@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# Runs command as another user
-su "$1" -s /bin/bash -c 'whoami'
