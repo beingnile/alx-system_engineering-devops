@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Shows all processes, for all users in a user-oriented format
+
+ps aux
