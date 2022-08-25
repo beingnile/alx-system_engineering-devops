@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Ping a network 5 times
+ping -c 5 $1
