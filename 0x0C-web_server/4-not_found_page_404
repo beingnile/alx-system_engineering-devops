@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-# Configure custom 404 page for nginx
-sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install nginx -y
-sudo chown -R "$USER":"$USER" /var/www/html
-echo "Ceci n'est pas une page" > /var/www/html/404.html
-sudo sed -i '/# pass PHP/i \\terror_page 404 /404.html;' /etc/nginx/sites-available/default
-sudo service nginx restart
