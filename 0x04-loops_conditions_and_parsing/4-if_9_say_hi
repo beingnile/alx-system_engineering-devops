@@ -7,9 +7,10 @@ do
 	if [ $count -eq 9 ]
 	then
 		echo "Hi"
-	else
-		echo "Best School"
+		((count++))
+		continue
 	fi
+	echo "Best School"
 
 	((count++))
 done
