@@ -2,9 +2,9 @@
 # Prints Best School 10 times but Hi on the 9th iteration
 count=1
 
-while [ $count -le 10 ]
+while [ $count -le 11 ]
 do
-	if [ $count -eq 9 ]
+	if [ $count -eq 10 ]
 	then
 		echo "Hi"
 		((count++))
