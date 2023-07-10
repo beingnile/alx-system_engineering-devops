@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # displays lines containing bash word
+# shellcheck disable=SC2009
 ps faux | grep bash
