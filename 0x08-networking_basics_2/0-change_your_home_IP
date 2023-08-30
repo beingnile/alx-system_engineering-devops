@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-# Configures an Ubuntu server that localhost resolves to 127.0.0.2
-cp /etc/hosts ~/hosts.new
-sed -i 's/127.0.0.1/127.0.0.2/; /127.0.0.2/a\8.8.8.8\t\tfacebook.com' ~/hosts.new
-cp -f ~/hosts.new /etc/hosts
