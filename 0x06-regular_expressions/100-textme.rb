@@ -1,2 +1,2 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/\[from:(\S+)\]|\[to:(\S+)\]|\[flags:(.*?)\]/).join(',')
+puts ARGV[0].scan(/\[from:([^\]]*)\]|\[to:([^\]]+)\]|\[flags:([^\]]*)\]/).map { |match| match.compact.reject(&:empty?).first }.join(',')
