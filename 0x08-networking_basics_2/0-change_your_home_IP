@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Configures /etc/hosts file
+cp /etc/hosts ~/hosts.new
+sed -i '/^127.0.0.1     localhost$/a 127.0.0.2 localhost' ~/hosts.new
+sed -i '/^127.0.1.1     /a 8.8.8.8 facebook.com' ~/hosts.new
+cp -f ~/hosts.new /etc/hosts
