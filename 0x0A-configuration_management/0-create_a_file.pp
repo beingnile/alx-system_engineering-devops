@@ -1,5 +1,4 @@
 file { 'school':
-ensure  => file,
 path    => '/tmp/school',
 group   => 'www-data',
 owner   => 'www-data',
