@@ -1,6 +1,6 @@
 file { 'school':
-path    => '/tmp/school',
 ensure  => file,
+path    => '/tmp/school',
 group   => 'www-data',
 owner   => 'www-data',
 mode    => '0744',
