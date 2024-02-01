@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Installs an nginx web server
+apt-get update && apt-get ugrade -y
+apt-get install nginx -y
+echo "Hello, World!" > /var/www/html/index.html
+chown -R $USER:$USER /var/www/
