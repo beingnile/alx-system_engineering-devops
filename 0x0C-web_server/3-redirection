@@ -5,5 +5,5 @@ URL='https://x.com/beingnile'
 
 apt-get update && apt-get upgrade -y
 apt-get install nginx -y
-sed -i "/server_name _;/a \\\n    location \/redirect_me {\n        return 301 $URL;\n    }" $FILE
+sed -i "/server_name _;/a \\\n        location \/redirect_me {\n            return 301 $URL;\n        }" $FILE
 service nginx restart
