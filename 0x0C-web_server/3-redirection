@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 # Configures an ubuntu with nginx
 FILE='/etc/nginx/sites-available/default'
 URL='https://x.com/beingnile'
