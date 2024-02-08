@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-# Configures an ubuntu with nginx
+# Configures an ubuntu with nginx and a custom 404 page
 FILE='/etc/nginx/sites-available/default'
-URL='https://x.com/beingnile'
 
 apt-get update && apt-get upgrade -y
 apt-get install nginx -y
