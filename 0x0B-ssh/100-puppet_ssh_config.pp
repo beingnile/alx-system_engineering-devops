@@ -7,13 +7,13 @@ file { '/etc/ssh/ssh_config':
 file_line { 'Turn off password auth':
     ensure =>  'present',
     path   =>  '/etc/ssh/ssh_config',
-    line   =>  '\t PasswordAuthentication no',
+    line   =>  '    PasswordAuthentication no',
     match  =>  '^PasswordAuthentication',
 }
 
 file_line { 'Declare Identity file':
     ensure =>  'present',
     path   =>  '/etc/ssh/ssh_config',
-    line   =>  '\t IdentityFile ~/.ssh/school',
+    line   =>  '    IdentityFile ~/.ssh/school',
     match  =>  '^IdentityFile ~/.ssh/id_rsa',
 }
