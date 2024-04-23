@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Installs and configures a private server with nginx
+apt-get update && apt-get upgrade -y
+apt-get install nginx -y
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
+service nginx restart
