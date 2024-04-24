@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Fixes a buggy apache server
+echo "ServerName localhost" >> /etc/apache2/apache2.conf
+service apache2 restart
