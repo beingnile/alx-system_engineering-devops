@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Installs and configures a private server with nginx
+apt-get update && apt-get upgrade -y
+apt-get install nginx -y
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
+echo "Ceci n'est pas une page" > /var/www/html/404.html
+sed -i '/server_name \_;/ a\
+        error_page 404 /404.html;\
+        location = /404.html {\
+            internal;\
+        }' /etc/nginx/sites-enabled/default
+sed -i '/server_name \_;/ a\
+        location /redirect_me {\
+            return 301 https:\/\/x.com\/beingnile;\
+        }' /etc/nginx/sites-enabled/default
+sed -i '/sendfile on;/i \ \ \ \ \ \ \ \ add_header X-Served-By \$hostname;' /etc/nginx/nginx.conf
+service nginx restart
