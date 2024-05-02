@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Displays information o subdomains
+logger() {
+    base="$1" # The base domain passed into function
+    sub="$2" # The subdomain
+    url="$sub.$base"
+
+    dig "$url" | grep -A1 'ANSWER SECTION:' | awk -v url="$url" -v subdomain="$sub" '$0 ~ url {print "The subdomain", subdomain, "is a", $4, "record and points to", $5}'
+}
+
+base="$1" # The base domain passed into script
+sub="$2" # Subdomain passed into script
+if [ -z "$sub" ];
+then
+    subdomains=("www" "lb-01" "web-01" "web-02")
+    for subdomain in "${subdomains[@]}";
+    do
+        logger "$base" "$subdomain"
+    done
+else
+    logger "$base" "$sub"
+fi
