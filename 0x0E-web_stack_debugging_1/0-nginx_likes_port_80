@@ -2,5 +2,5 @@
 # Configures a server with nginx
 apt-get update && apt-get upgrade -y
 apt-get install nginx -y
-sed -i 's/listen \[::\]:80 default_server;/# listen [::]:80 default_server;/' /etc/nginx/sites-enabled/default
+sed -i 's/listen [::]:80 default_server;/listen 80 default_server;\n    listen [::]:80 default_server ipv6only=on;/' /etc/nginx/sites-available/default
 service nginx start
