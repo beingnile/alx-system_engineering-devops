@@ -1,5 +1,24 @@
 - Introduction
+
+The internet, in it's most basic form, is a global network of interconnected computers communicating with each other.
+The idea of the internet started in the 1960s as an attempt to connect computers over a network to share resources, with the possibility of expanding it to a wide area network(WAN).
+This led to the development of what would be the first functional version of the internet, ARPANET, in the late 1960s and the idea behind it was absolutely genius.
+Data shared digitally over this network was grouped into tiny blocks called packets. These packets would contain an header and a payload.
+The header would contain the source and destination IP addresses, sequence numbers and other valuable resources used by networking devices to send information(the payload) over the network.
+Think of IP addresses to computers as home addresses are to homes. IP addresses are used to identify devices on a network.
+Such a network is commonly known as a packet-switched network.
+Over the coming years, more packet-switched networks arose due to the potency of the research.
+This time, researchers were looking into connecting such packet-switched networks with other networks.
+This ushered in some rules called protocols designed to dictate how data should be packaged(into packets), transmitted and received by computers over a network despite the difference in system architecture.
+In the late 1970s, public networks became a thing and since then, the internet has gone through explosive growth.
+That's it folks! Yes, the internet is just a big packet-switched network based on some rules called protocols.
+But what really happens under the hood, how does my browser know where to get the information I want? How does this information end up on my computer and not on a different one?
+There's a rather simple architecture behind how we use the internet today. We have computers accessing the information through a browser(a client) and computers serving the resources(servers).
+Let's have a look at what happens when I type `https://www.google.com` in my browser and press Enter.
+
 - DNS request
+
+
 - TCP/IP
 - Firewall
 - HTTPS/SSL
