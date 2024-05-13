@@ -18,6 +18,28 @@ Let's have a look at what happens when I type `https://www.google.com` in my bro
 
 - DNS request
 
+When you access a website through a web browser, your browser sends a request to a web server and copies of the component files are downloaded to be displayed in the browser.
+Somewhere in the world, the component files (HTML documents, images, CSS and JavaScript files) of the site www.google.com, are stored in a web server. 
+Computers identify each other using IP addresses and so the client device, in this case your phone or PC, has to know where to ask for the resources.
+It's hard for humans to keep track of all these IP addresses offhead and so there's a huge phonebook of some sorts called the DNS (Domain Name System) servers where your browser can send a request for the IP address mapping to the name.
+There are four types of DNS servers
+- The DNS resolver
+- The root servers
+- The TLD servers/ Top Level Domain server
+- Authoritative name servers
+When I press Enter, the browser first checks it's cache for the IP address of www.google.com. If the IP is not found, the browser checks the Operating System's cache.
+When the OS has no information on the IP address, it sends a request to a DNS resolver.
+A resolver is a server on the internet that converts domain names into IP addresses.
+The resolver your computer contacts is usually determined by your Internet Service Provider (ISP).
+The resolver then checks it's cache for any information on the requested IP address. If there's no information, the resolver forwards the request to the Root name server.
+The functionality of how the DNS works is hierarchical, and right on top of the structure lies the root name servers. Every name resolution starts with a request to a root server or uses informtino once obtained from root servers.
+The root servers have information on the Top-Level Domain servers.
+The root server receiving the request will know where to locate the .COM TLD server.
+The resolver gets the IP address of the .COM TLD server and sends the request to the .COM TLD server. Depending on the URL, different TLD servers hold information based on the TLD. There are quite a number of TLDs managed by these servers actually, for example, .NET, .ORG, .KE among others.
+The .COM TLD server has the information on all sites with a .COM domain. Therefore the authoritative name server IP addresses are shared with the resolver.
+Last in the hierarchy lies the authoritative name servers. These store the IP addresses of website.
+The resolver then queries the authoritative name servers for www.google.com's IP address.
+This information is relayed back to the OS by the resolver after the resolver storesit in it's cache and the OS then serves the browser with the IP address of the searched website.
 
 - TCP/IP
 - Firewall
