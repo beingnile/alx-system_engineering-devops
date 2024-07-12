@@ -18,7 +18,7 @@ package { 'nginx':
 # Manage index.html and 404.html files
 file { '/var/www/html/index.nginx-debian.html':
     ensure  => file,
-    content => 'Hello World!',
+    content => 'Hello World!\n',
     owner   => 'www-data',
     group   => 'www-data',
     mode    => '0644',
@@ -27,7 +27,7 @@ file { '/var/www/html/index.nginx-debian.html':
 
 file { '/var/www/html/404.html':
     ensure  => file,
-    content => "Ceci n'est pas une page",
+    content => "Ceci n'est pas une page\n",
     owner   => 'www-data',
     group   => 'www-data',
     mode    => '0644',
