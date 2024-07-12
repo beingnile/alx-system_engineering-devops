@@ -11,6 +11,6 @@ sed -i '$a\
 backend my_backend\
 \ \ \ \ \ \ \ \ mode http\
 \ \ \ \ \ \ \ \ balance roundrobin\
-\ \ \ \ \ \ \ \ server web-01 100.26.226.159:80 check\
-\ \ \ \ \ \ \ \ server web-02 54.227.128.21:80 check' /etc/haproxy/haproxy.cfg
+\ \ \ \ \ \ \ \ server web-01 54.158.218.156:80 check\
+\ \ \ \ \ \ \ \ server web-02 100.26.49.0:80 check' /etc/haproxy/haproxy.cfg
 service haproxy restart
