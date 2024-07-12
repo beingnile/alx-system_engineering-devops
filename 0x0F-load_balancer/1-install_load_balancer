@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Configures a new ubuntu server into a load balancer with haproxy
 apt-get update && apt-get upgrade -y
-apt-get install haproxy
+apt-get install haproxy -y
 sed -i '$a\
 frontend my_frontend\
 \ \ \ \ \ \ \ \ bind *:80\
