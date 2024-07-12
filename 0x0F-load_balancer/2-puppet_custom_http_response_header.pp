@@ -7,7 +7,7 @@ exec { 'apt-update':
 
 exec { 'apt-upgrade':
     command => '/usr/bin/apt-get upgrade -y',
-    path    => ['/bin', '/usr/bin'],
+    path    => ['/bin', '/usr/bin', '/usr/sbin', '/sbin'],
     before  => Package['nginx'],
 }
 
@@ -97,7 +97,7 @@ http {
         # SSL Settings
         ##
 
-        ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
         ssl_prefer_server_ciphers on;
 
         ##
